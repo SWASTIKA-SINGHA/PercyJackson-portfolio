@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
 <body>
+    <div class="background"></div>
+
     <header>
         <h1>Hermes’s Scroll</h1>
     </header>
@@ -22,9 +24,12 @@
 
     <section>
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+        <form action="https://formsubmit.co/youremail@example.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required /><br><br>
+            <input type="email" name="email" placeholder="Your Email" required /><br><br>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
